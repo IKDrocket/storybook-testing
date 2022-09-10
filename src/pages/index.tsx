@@ -1,7 +1,7 @@
 import { Flex, useDisclosure } from "@chakra-ui/react";
 import type { NextPage } from "next";
-import { ChakraButton } from "../component/ChakraButton";
-import { ChakraModal } from "../component/ChakraModal";
+import { ChakraButton } from "../components/ChakraButton";
+import { ChakraModal } from "../components/ChakraModal";
 
 const Home: NextPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

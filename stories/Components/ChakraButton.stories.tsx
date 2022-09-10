@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { ChakraButton } from "../../component/ChakraButton";
+import { ChakraButton } from "../../src/components/ChakraButton";
 
 export default {
   title: "Components/Parts/ChakraButton",

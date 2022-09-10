@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { ChakraModal } from "../../component/ChakraModal";
+import { ChakraModal } from "../../src/components/ChakraModal";
 
 export default {
   title: "Components/Parts/ChakraModal",
