@@ -1,9 +1,9 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { ChakraButton } from "../../../component/ChakraButton";
+import { ChakraButton } from "../../component/ChakraButton";
 
 export default {
-  title: "Component/ChakraButton",
+  title: "Components/Parts/ChakraButton",
   component: ChakraButton,
 } as ComponentMeta<typeof ChakraButton>;
 
