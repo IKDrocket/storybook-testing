@@ -1,9 +1,10 @@
+import userEvent from "@testing-library/user-event";
 import { cleanup, render } from "@testing-library/react";
 import { screen } from "@testing-library/react";
 
 import { composeStories } from "@storybook/testing-react";
 
-import * as stories from "../stories/Components/ChakraButton.stories";
+import * as stories from "../../stories/Components/ChakraButton.stories";
 
 const { Default, Primary, Loading, Disabled } = composeStories(stories);
 
@@ -52,11 +53,11 @@ describe("正常系", () => {
     expect(button).not.toBeDisabled();
   });
 
-  test("onClickが呼ばれる", () => {
+  test("onClickが呼ばれる", async () => {
     const onClick = jest.fn();
     render(<Default onClick={onClick} />);
     const button = screen.getByRole("button");
-    button.click();
+    await userEvent.click(button);
     expect(onClick).toHaveBeenCalled();
   });
 });
