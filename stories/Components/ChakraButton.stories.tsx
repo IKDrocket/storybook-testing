@@ -11,14 +11,14 @@ const Template: ComponentStory<typeof ChakraButton> = (args) => (
   <ChakraButton {...args} />
 );
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
+export const Default = Template.bind({});
+Default.args = {
   label: "Button",
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const Primary = Template.bind({});
+Primary.args = {
+  primary: true,
   label: "Button",
 };
 
