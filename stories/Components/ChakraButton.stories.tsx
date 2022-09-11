@@ -33,21 +33,3 @@ Disabled.args = {
   label: "Button",
   disabled: true,
 };
-
-export const Large = Template.bind({});
-Large.args = {
-  size: "lg",
-  label: "Button",
-};
-
-export const Middle = Template.bind({});
-Middle.args = {
-  size: "md",
-  label: "Button",
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: "sm",
-  label: "Button",
-};

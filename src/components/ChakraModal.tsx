@@ -25,7 +25,7 @@ export const ChakraModal = (props: Props) => {
         <ModalHeader>Modal Title</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          <p>Modal Body</p>
         </ModalBody>
 
         <ModalFooter>

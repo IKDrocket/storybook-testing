@@ -3,14 +3,13 @@ import { Button } from "@chakra-ui/react";
 type Props = {
   primary?: boolean;
   label: string;
-  size?: "sm" | "md" | "lg" | "xs";
   disabled?: boolean;
   isLoading?: boolean;
   onClick: () => void;
 };
 
 export const ChakraButton = (props: Props) => {
-  const { primary, label, size, disabled, isLoading, onClick } = props;
+  const { primary, label, disabled, isLoading, onClick } = props;
 
   const color = primary ? "white" : "gray.900";
   const bgColor = primary ? "red.400" : "gray.50";
@@ -18,7 +17,6 @@ export const ChakraButton = (props: Props) => {
 
   return (
     <Button
-      size={size}
       color={color}
       bgColor={bgColor}
       border="1px"
