@@ -5,6 +5,23 @@ import { ChakraButton } from "../../src/components/ChakraButton";
 export default {
   title: "Components/Parts/ChakraButton",
   component: ChakraButton,
+  argTypes: {
+    label: {
+      description: "ボタンのテキスト",
+    },
+    primary: {
+      description: "ボタンの色を変える",
+    },
+    isLoading: {
+      description: "ローディング中かどうか",
+    },
+    disabled: {
+      description: "ボタンを無効化するかどうか",
+    },
+    onClick: {
+      description: "ボタンがクリックされたときのハンドラ",
+    },
+  },
 } as ComponentMeta<typeof ChakraButton>;
 
 const Template: ComponentStory<typeof ChakraButton> = (args) => (
