@@ -19,7 +19,7 @@ export const ChakraButton = (props: Props) => {
     <Button
       color={color}
       bgColor={bgColor}
-      border="1px"
+      border="2px"
       borderColor={borderColor}
       isLoading={isLoading}
       disabled={disabled || isLoading}

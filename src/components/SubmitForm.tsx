@@ -8,7 +8,7 @@ export const SubmitForm = () => {
   const [value, setValue] = useState("");
 
   return (
-    <HStack>
+    <HStack spacing="10px">
       <ChakraInput value={value} onChange={(e) => setValue(e.target.value)} />
       <ChakraButton
         label="Submit"
