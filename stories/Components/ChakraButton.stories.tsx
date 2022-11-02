@@ -13,23 +13,23 @@ const Template: ComponentStory<typeof ChakraButton> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  label: "Button",
+  children: "Button",
 };
 
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  label: "Button",
+  children: "Button",
 };
 
 export const Loading = Template.bind({});
 Loading.args = {
-  label: "Button",
+  children: "Button",
   isLoading: true,
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  label: "Button",
+  children: "Button",
   disabled: true,
 };
